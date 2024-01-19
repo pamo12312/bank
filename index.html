@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+<div class="like">❤️ <span id="totalFavoritesSpan">0</span></div>
 <div class="center">
     <div class="img">🏦 </div>
 </div>
@@ -14,7 +15,25 @@
     <input type="text" class="input" placeholder="🔎Search banks..." id="searchInput">
 </div>
 <div class="banks-container" id="banks-container"></div>
-<div>Total Favorites: <span id="totalFavorites">0</span></div>
 
 </body>
 </html>
+
+
+<script >
+    let totalFavorites = 0;
+    const maxFavorites = 4; // Maximum allowed favorites
+    const totalFavoritesSpan = document.getElementById("totalFavoritesSpan");
+
+    function addFavorite(bankName, buttonColor, favoriteCount) {
+        if (totalFavorites < maxFavorites) {
+            totalFavorites++;
+            totalFavoritesSpan.textContent = totalFavorites;
+            document.getElementById(`${bankName}-favorite-count`).textContent = favoriteCount + 1;
+        }
+    }
+
+
+
+
+</script>
