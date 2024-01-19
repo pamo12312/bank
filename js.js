@@ -4,7 +4,7 @@ const data = {
         {
             "name": "Bank of Springfield",
             "location": "123 Main St, Springfield, IL",
-            "overall_score": 85,
+            "overall_score": 100,
             "opening_hours": "9:00 AM - 5:00 PM",
             "loan_interest_rate": "3.5%",
             "favoriteCount": 0
@@ -63,7 +63,7 @@ function renderBanks(banks) {
        
         <div class="dol">
             <h3 style="color: ${buttonColor};">${bank.name}</h3>
-            <div>a</div>
+            <div>💴</div>
         </div>
             <p>Location: ${bank.location}</p>
             <p style="color: ${buttonColor};">Overall Score: <span style="color: ${buttonColor};">${bank.overall_score}</span></p>
