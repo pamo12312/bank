@@ -1,4 +1,3 @@
-let totalFavoritesSpan = document.getElementById("totalFavoritesSpan")
 const data = {
     "banks": [
         {
